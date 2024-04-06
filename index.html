@@ -8,34 +8,150 @@
 </head>
 <body>
     <header class="header">
-      <div class="logo">
-        <h2 class="logo__heading">IC "Repair Design Project"</h2>
-      </div>
-      <nav class="header__nav">
-        <ul class="header__list">
-          <li class="header__item"> <a class="header__link" href=""><span class="link_wrapper"> HOME</span> </a> </li>
-          <li class="header__item"> <a class="header__link" href="">PROJECTS</a> </li>
-          <li class="header__item"> <a class="header__link" href="">MEASUREMENT</a> </li>
-          <li class="header__item"> <a class="header__link" href="">TEAM</a> </li>
-          <li class="header__item"> <a class="header__link" href="">REVIEWS</a> </li>
-          <li class="header__item"> <a class="header__link" href="">CONTACTS</a> </li>
-        </ul>
-      </nav>
-      <div class="number">
-        <p class="header__number">+7 (928) 768-32-39</p>
-      </div>
-      <button type="button" class="header__btn">Request a call</button>
+      <din class="header__container">
+        <div class="logo">
+          <h1 class="logo__heading">IC "Repair Design Project"</h1>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item"> <a class="header__link" href=""><span class="link_wrapper"> HOME</span> </a> </li>
+            <li class="header__item"> <a class="header__link" href="">PROJECTS</a> </li>
+            <li class="header__item"> <a class="header__link" href="">MEASUREMENT</a> </li>
+            <li class="header__item"> <a class="header__link" href="">TEAM</a> </li>
+            <li class="header__item"> <a class="header__link" href="">REVIEWS</a> </li>
+            <li class="header__item"> <a class="header__link" href="">CONTACTS</a> </li>
+          </ul>
+        </nav>
+        <div class="number">
+          <p class="header__number">+7 (928) 768-32-39</p>
+        </div>
+        <button type="button" class="header__btn">Request a call</button>
+      </din>
     </header>
     <main>
+      <div class="content">
       <section class="hero">
-        <div class="hero__conteiner">
-        <h1 class="hero__heading">Turnkey Repair in the <br> city of <span class="hero__heading_wrap"> Rostov-on-Don</span></h1>
-        <p class="hero__text">Get ready-made turnkey repairs on time <br>with work time saving up to 45 days and 20% from <br>  cost of materials due to the organization of work</p>
-        <div class="hero__wrap">
-          <button type="button" class="hero__btn-orange">CALCULATE THE COST</button>
-          <button type="button" class="hero__btn-transparency">SUBMIT YOUR APPLICATION</button>
-        </div>
+        <div class="hero__container">
+          <h1 class="hero__heading">Turnkey Repair in the <br> city of <span class="hero__heading_wrap"> Rostov-on-Don</span></h1>
+          <p class="hero__text">Get ready-made turnkey repairs on time <br>with work time saving up to 45 days and 20% from <br>  cost of materials due to the organization of work</p>
+          <div class="hero__wrap">
+            <button type="button" class="hero__btn-orange">CALCULATE THE COST</button>
+            <button type="button" class="hero__btn-transparency">SUBMIT YOUR APPLICATION</button>
+          </div>
       </div>
+      </section>
+      <section class="projects">
+        <div class="projects__container">
+          <div class="projects__wrap">
+            <div class="projects__CompletedProjects">
+              <h2 class="CompletedProjects__heading">Completed <br>projects</h2>
+              <p class="CompletedProjects__text">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction <br>market we have made happy more than 1000 families</p>
+              <div class="project__describe">
+                <div class="describe_city">
+                  <h2>City:</h2>
+                  <p>Rostov-on-Don <br> LCD admiral</p>
+                </div>
+                <div class="describe_repair">
+                  <div class="describe_area">
+                    <h2>Apartment area:</h2>
+                    <p>81 m2</p>
+                  </div>
+                  <h2>Repair time:</h2>
+                  <p>3.5 months</p>
+                </div>
+                <div class="describe_cost">
+                  <h2>Repair Cost:</h2>
+                  <p>Upon request</p>
+                </div>
+              </div>
+              <img src="src/img/png/Group 8.4.png" alt="стрелки" class="CompletedProjects__img">
+            </div>
+            <div class="projects__example">
+              <ul class="example__list">
+                <li class="example__items"> <a class="example__items_link"><span class="example__items_link_wrap">Rostov-on-Don, Admiral</span></a></li>
+                <li class="example__items"> <a class="example__items_link">Sochi Thieves</a></li>
+                <li class="example__items"> <a class="example__items_link">Rostov-on-Don Patriotic</a></li>
+              </ul> 
+              <img src="src/img/png/image 2.1.png" alt="квартира" class="example__img">
+            </div>
+          </div>
+          <div class="control">
+            <div class="control__container">
+              <h2 class="control__heading">online control</h2>
+              <img src="src/img/png/camera.PNG" alt="камера" class="control__img">
+              <img src="src/img/png/video.PNG" alt="видео" class="control__video">
+              <hr>
+              <p class="control__text">At each facility, a camera is installed that broadcasts the progress of work on the <br>clock. At any time, you can go to our website and monitor the progress of work in <br>your apartment. You can watch the live broadcast from one of our facilities! <br>Leave a request below and you will receive a link to the broadcast.</p>
+              <div class="contacts">
+                
+                <label >
+                  text_input
+                  <input class="contacts__text"  type="text" name="name" placeholder="name is your name:">
+                  
+                </label>
+                <input class="contacts__text" type="number" name="number_input" placeholder="Your phone number:">
+                <button class="contacts__btn" type="button" class="hero__btn-transparency">Submit</button>
+              </div>
+              <div class="contacts__agree">
+                <input class="agree_checkbox" type="checkbox" name="check" value="1">
+                <label for="check1">I agree to the processing of personal data</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="TYPES-OF-REPAIR">
+        <div class="TYPES-OF-REPAIR__container">
+          <h2 class="TYPES-OF-REPAIR__heading">TYPES OF REPAIR</h2>
+          <img src="src/img/png/inmtruments.PNG" alt="instruments" class="TYPES-OF-REPAIR__img">
+          <div class="TYPES-OF-REPAIR__wrap">
+            <div class="Redecorating">
+              <div class="TYPES-OF-REPAIR_container">
+                <h3 class="Redecorating_heading">Redecorating</h3>
+                <ul class="TYPES-OF-REPAIR_list">
+                  <li class="TYPES-OF-REPAIR_items">• Dismantling of old coatings</li>
+                  <li class="TYPES-OF-REPAIR_items">• Wallpapering</li>
+                  <li class="TYPES-OF-REPAIR_items">• Painting walls and ceilings</li>
+                  <li class="TYPES-OF-REPAIR_items">• Laying flooring</li>
+                  <li class="TYPES-OF-REPAIR_items">• Replacing plumbing</li>
+                  <li class="TYPES-OF-REPAIR_items">• Replacing sockets and switches</li>
+                  <li class="TYPES-OF-REPAIR_items">• Replacing plumbing</li>
+                </ul>
+                <button type="button" class="TYPES-OF-REPAIR_btn">from 900 rub / m2</button>
+              </div>
+            </div>
+            <div class="Overhaul">
+              <div class="TYPES-OF-REPAIR_container">
+                <h3 class="Overhaul_heading">Overhaul</h3>
+                <ul class="TYPES-OF-REPAIR_list">
+                  <li class="TYPES-OF-REPAIR_items">• Dismantling of old coatings</li>
+                  <li class="TYPES-OF-REPAIR_items">• Wallpapering</li>
+                  <li class="TYPES-OF-REPAIR_items">• Painting walls and ceilings</li>
+                  <li class="TYPES-OF-REPAIR_items">• Laying flooring</li>
+                  <li class="TYPES-OF-REPAIR_items">• Replacing plumbing</li>
+                  <li class="TYPES-OF-REPAIR_items">• Replacing sockets and switches</li>
+                  <li class="TYPES-OF-REPAIR_items">• Replacing plumbing</li>
+                </ul>
+                <button type="button" class="TYPES-OF-REPAIR_btn">from 1800 rub / m2</button>
+              </div>
+            </div>
+            <div class="DesignerRepair">
+              <div class="TYPES-OF-REPAIR_container">
+                <h3 class="DesignerRepair_heading">Designer Repair</h3>
+                <ul class="TYPES-OF-REPAIR_list">
+                  <li class="TYPES-OF-REPAIR_items">• Dismantling of old coatings</li>
+                  <li class="TYPES-OF-REPAIR_items">• Wallpapering</li>
+                  <li class="TYPES-OF-REPAIR_items">• Painting walls and ceilings</li>
+                  <li class="TYPES-OF-REPAIR_items">• Laying flooring</li>
+                  <li class="TYPES-OF-REPAIR_items">• Replacing plumbing</li>
+                  <li class="TYPES-OF-REPAIR_items">• Replacing sockets and switches</li>
+                  <li class="TYPES-OF-REPAIR_items">• Replacing plumbing</li>
+                </ul>
+                <button type="button" class="TYPES-OF-REPAIR_btn">from 4000 rub / m2</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <footer>
