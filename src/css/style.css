@@ -225,17 +225,21 @@ hr{
 .contacts{
   padding-top: 92px;
 }
+.contacts__label{
+  color: #363636;
+  position: relative;
+  z-index: 10;
+  left: 150px;
+  top: 8px;
+}
 .contacts__text{
   width: 220px;
   border: none;
   border-bottom: 1px outset #3636364D;
-  padding: 8px 0;
-  margin-right: 5em;
-}
-.contacts_text::placeholder{
-  color: #131313;
-  border: none;
-  outline: 0;
+  padding: 8px 0 40px 0;
+  position: relative;
+  z-index: 1;
+  bottom: 20px;
 }
 .contact__agree:focus{
   color: #131313;
@@ -252,6 +256,7 @@ hr{
   background: #E3B873;
   border-radius: 2px;
   padding: 20px 75px;
+  margin-left: 3em;
   cursor: pointer;
 }
 .contacts__agree{
@@ -260,9 +265,9 @@ hr{
   line-height: 22px;
   padding-top: 34px;
 }
-.agree_checkbox[type='checkbox']:checked + label {
+.agree_checkbox[type='checkbox']:checked + label{
   background-color: #E3B87333; 
-  font-weight: bold;
+  opacity: 70%;
   transition: 0.3s ease;
 }
 .TYPES-OF-REPAIR{
@@ -357,4 +362,232 @@ background: #E3B873;
 padding: 17px 22px;
 cursor: pointer;
 margin-right: 100;
+}
+.information__container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 500px;
+  .manual{
+    background-image: url(../img/svg/image\ 6.1.svg);
+    background-position-y: -110px;
+    background-repeat: no-repeat;
+    max-height: 645px;
+    width: 1006px;
+    padding-left: 249px;
+      .manual__items{
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        max-height: 473px;
+        font-size: 14px;
+        gap: 1em;
+        padding: 1em 0 6em 0;
+      }
+    img{
+      height: 41px;
+    }
+  }
+  .request{
+    padding-right: 100px;
+    .request__container{
+      height: 509px;
+      width: 506px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #131313;
+      .request__heading{
+        color: #FFFFFF;
+        padding-top: 28px;
+      }
+      .request__wrap{
+        width: 408px;
+        padding-top: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .request__label{
+          color: #FFFFFF;
+          font-size:14px;
+          font-weight: 400;
+          position: relative;
+          z-index: 10;
+          top: -80px;
+        }
+        .request__text{
+          width: 408px;
+          background-color: #131313;
+          color: #FFFFFF;
+          opacity: 50%;
+          border: none;
+          border-bottom: 1px outset #3636364D;
+          margin-bottom: 42px;
+          position: relative;
+          z-index: 1;
+        }
+        .request__text::placeholder{
+          color: #fff;
+          border: none;
+          outline: 0;
+        }
+        .agree__checkbox{
+          position: relative;
+          bottom: 40px;
+          .request__checkbox{
+            color: #FFFFFF;
+            font-size: 14px;
+            line-height: 22px;
+            
+          }
+          .request__checkbox[type='checkbox']:checked + label{
+            background-color: #E3B87333; 
+            opacity: 70%;
+            transition: 0.3s ease;
+          }
+        }
+      }
+      .request__btn{
+        font-style: italic;
+        font-size: 1.1em;
+        text-transform: uppercase;
+        border: none;
+        color: white;
+        box-shadow: 0px 5px 15px 0px #E3B87333;
+        background: #E3B873;
+        border-radius: 2px;
+        padding: 20px 75px;
+        margin-left: 11em;
+        cursor: pointer;
+      }
+    }
+    .advertisement{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      color: #E3B873;
+      gap: 25px;
+      padding: 39px 0 0 33px;
+        .advertisement__img{
+          max-height: 72px;
+        }
+    }
+  }
+}
+.fantasies{
+  .fantasies__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-height: 864px;
+    background-image: url(../img/png/Group\ 22.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 242px;
+    .fantasies__info{
+      margin-top: 292px;
+      min-width: 411px;
+      display: flex;
+      flex-direction: column;
+      padding: 107px 77px 97px 0px;
+      .fantasies__heading{
+        text-transform: uppercase;
+        font-size: 27px;
+        font-family: Yeseva One;
+        color: #E3B873;
+        padding-bottom: 37px;
+      }
+      .fantasies__list{
+        list-style-type: none;
+        .fantasies__item{
+          padding-bottom: 15px;
+          .fantasies__link{
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 38px;
+            color: #FFFFFF;
+            text-decoration: none;
+            .fantasies__link_wrap{
+              color: #E3B873;
+              border-bottom: 1px solid #E3B873;
+              padding-bottom: 5px;
+            }
+          }
+        }
+      }
+    }
+    .fantasies__img{
+      display: grid;
+      grid-template: 50% 0%/ 55% 0%;
+      padding-top: 242px;
+      #img2{
+        position: relative;
+        bottom: 6em;
+      }
+      #img4{
+        position: relative;
+        bottom: 370px; 
+      }
+    }
+  }
+}
+.clients{
+  .clients__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 10em;
+    .clients__heading{
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+    .clients__img{
+      height: 35px;
+      padding: 20px 0 25px 0;
+    }
+    .clients__text{
+      font-size: 18px;
+      line-height: 29px;
+      text-align: center;
+      padding-bottom: 39px;
+    }
+    .clients__feedback{
+      display: flex;
+      gap: 3em;
+      .clients__num{
+        width: 376px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0.1em 0.1em 0.4em #dfdede;
+        .wrap{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 1.5em;
+          img{height: 76px;}
+          .num__heading{
+            font-size: 18px;
+            line-height: 28px;
+            padding-right: 6em;
+          }
+        }
+        .num__text{
+          font-size: 13px;
+          font-weight: 400;
+          line-height: 23px;
+          color: #959595;
+          width: 25em;
+          padding-bottom: 5px;
+        }
+        .clients__btn{
+          height: 3em;
+          position: relative;
+          top: 1.5em;
+          right: 3.5em;
+        }
+      }
+    }
+  }
 }

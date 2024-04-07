@@ -83,18 +83,15 @@
               <hr>
               <p class="control__text">At each facility, a camera is installed that broadcasts the progress of work on the <br>clock. At any time, you can go to our website and monitor the progress of work in <br>your apartment. You can watch the live broadcast from one of our facilities! <br>Leave a request below and you will receive a link to the broadcast.</p>
               <div class="contacts">
-                
-                <label >
-                  text_input
-                  <input class="contacts__text"  type="text" name="name" placeholder="name is your name:">
-                  
-                </label>
-                <input class="contacts__text" type="number" name="number_input" placeholder="Your phone number:">
-                <button class="contacts__btn" type="button" class="hero__btn-transparency">Submit</button>
+                <label class="contacts__label" for="contacts__text">Whats is your name:</label>
+                <input class="contacts__text"  type="text" name="name" placeholder="Name">
+                <label class="contacts__label" for="contacts__text">Your phone number:</label>
+                <input class="contacts__text" type="number" name="number_input" placeholder="Numper">
+                <button class="contacts__btn" type="button">Submit</button>
               </div>
               <div class="contacts__agree">
                 <input class="agree_checkbox" type="checkbox" name="check" value="1">
-                <label for="check1">I agree to the processing of personal data</label>
+                <label for="agree_checkbox">I agree to the processing of personal data</label>
               </div>
             </div>
           </div>
@@ -149,6 +146,105 @@
                 </ul>
                 <button type="button" class="TYPES-OF-REPAIR_btn">from 4000 rub / m2</button>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="information">
+        <div class="information__container">
+          <div class="manual">
+            <ul class="manual__list">
+              <li class="manual__items"><img src="src/img/png/one.PNG" alt="1"> Our specialist will arrive for measurements per day <br> contact, or appoint a date convenient for you</li>
+              <li class="manual__items"><img src="src/img/png/two.PNG" alt="2">Free metering</li>
+              <li class="manual__items"><img src="src/img/png/three.PNG" alt="3">Free consultation</li>
+              <li class="manual__items"><img src="src/img/png/four.PNG" alt="4">Get a cost estimate and <br>the timing of your future repairs</li>
+            </ul>
+          </div>
+          <div class="request">
+            <div class="request__container">
+              <h3 class="request__heading">Leave a request for free <br>departure of the measurer</h3>
+              <div class="request__wrap">
+                <input class="request__text"  type="text" name="name" value="Name">
+                <label class="request__label" for="request__text">Whats is your name:</label>
+                <input class="request__text" type="number" placeholder="Phone" >
+                <label class="request__label" for="request__text">Your phone number:</label>
+                <input class="request__text" type="mail" placeholder="Email" >
+                <label class="request__label" for="request__text">Your email:</label>
+                <div class="agree__checkbox">
+                  <input class="request__checkbox" type="checkbox" name="check" value="1">
+                  <label class="request__checkbox" for="checkbox">I agree to the processing of personal data</label>
+                </div>
+                <button class="request__btn" type="button">Submit</button>
+              </div>
+            </div>
+            <div class="advertisement">
+              <img class="advertisement__img" src="src/img/png/pig.PNG" alt="pig">
+              <p class="advertisement__text">Help save 10 - 20% of the <br>cost of materials</p>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+      <section class="fantasies">
+        <div class="fantasies__container">
+          <div class="fantasies__info">
+            <h2 class="fantasies__heading">We realize your <br>wildest fantasies</h2>
+            <ul class="fantasies__list">
+              <li class="fantasies__item"> <a class="fantasies__link" href=""><span class="fantasies__link_wrap"> American classic</span> </a> </li>
+              <li class="fantasies__item"> <a class="fantasies__link" href="">Empire</a> </li>
+              <li class="fantasies__item"> <a class="fantasies__link" href="">Classical</a> </li>
+              <li class="fantasies__item"> <a class="fantasies__link" href="">Loft</a> </li>
+              <li class="fantasies__item"> <a class="fantasies__link" href="">Minimalism</a> </li>
+              <li class="fantasies__item"> <a class="fantasies__link" href="">Provence</a> </li>
+              <li class="fantasies__item"> <a class="fantasies__link" href="">Romanticism</a> </li>
+              <li class="fantasies__item"> <a class="fantasies__link" href="">Scandinavian style</a> </li>
+              <li class="fantasies__item"> <a class="fantasies__link" href="">Mediterranean style</a> </li>
+              <li class="fantasies__item"> <a class="fantasies__link" href="">High tech</a> </li>
+              <li class="fantasies__item"> <a class="fantasies__link" href="">Eclecticism</a> </li>
+            </ul>
+          </div>
+          <div>
+            <div class="fantasies__img">
+              <img id="img1" src="src/img/png/image 5.png" alt="стена с часами">
+              <img id="img2" src="src/img/png/image 5 (1).png" alt="стена с часами">
+              <img id="img3" src="src/img/png/image 5 (2).png" alt="стена с часами">
+              <img id="img4" src="src/img/png/image 5 (3).png" alt="стена с часами">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="clients">
+        <div class="clients__container">
+          <h2 class="clients__heading">our clients</h2>
+          <img class="clients__img" src="src/img/png/icon.PNG" alt="полоски">
+          <p class="clients__text"> 80% of our customers recommend us to their <br>friends and family.</p>
+          <div class="clients__feedback">
+            <div class="clients__num">
+              <div class="wrap">
+              <img class="clients__img" src="src/img/png/client1.PNG" alt="полоски">
+              <h3 class="num__heading">Voronin Egor <br> Aleksandrovich</h3>
+              </div>
+              <p class="num__text">I want to thank the guys for their work. We put your shower part in repair. I am very grateful that I referred to the repair as to my own. Great thanks I express the project to Georgia for its professionalism and approach. </p>
+              <p class="num__text">The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these masters.</p>
+              <img class="clients__btn" src="src/img/png/btn.PNG" alt="кнопка">
+            </div>
+            <div class="clients__num">
+              <div class="wrap">
+              <img class="clients__img" src="src/img/png/client2.PNG" alt="полоски">
+              <h3 class="num__heading">Modenov Arseniy <br> Aleksandrovich</h3>
+              </div>
+              <p class="num__text">I want to thank the guys for their work. We put your shower part in repair. I am very grateful that I referred to the repair as to my own. Great thanks I express the project to Georgia for its professionalism and approach. </p>
+              <p class="num__text">The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these masters.</p>
+              <img class="clients__btn" src="src/img/png/btn.PNG" alt="кнопка">
+            </div>
+            <div class="clients__num">
+              <div class="wrap">
+              <img class="clients__img" src="src/img/png/client3.PNG" alt="полоски">
+              <h3 class="num__heading">Narly Ivan <br> Ivanovich</h3>
+              </div>
+              <p class="num__text">I want to thank the guys for their work. We put your shower part in repair. I am very grateful that I referred to the repair as to my own. Great thanks I express the project to Georgia for its professionalism and approach. </p>
+              <p class="num__text">The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these masters.</p>
+              <img class="clients__btn" src="src/img/png/btn.PNG" alt="кнопка">
             </div>
           </div>
         </div>
