@@ -10,6 +10,9 @@ button:hover{
 button:active{
   transform: scale(0.5);
 }
+@media screen and (min-width: 376px) {
+  .phone,.fantasiesPhone,.projects__img{display: none;}
+}
 .header{
   width: 100%;
   height: 83px;
@@ -55,6 +58,7 @@ button:active{
 .header__number{
   color: #E3B873;
   padding-right: 5em;
+  cursor: pointer;
 }
 .header__btn{
   font-weight: bold;
@@ -70,7 +74,9 @@ button:active{
   cursor: pointer;
 }
 .hero{
-  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   height: 707px;
   width: 100%;
   background-image: url(../img/png/image\ 4.3.png);
@@ -79,8 +85,9 @@ button:active{
 }
 .hero__container{
   width: fit-content;
+  max-width: 1440px;
   height: 305px; 
-  padding: 194px 0 208px 134px;
+  padding: 194px 49em 208px 10%;
   background: #000000B2;
   opacity: 90%;
 }
@@ -169,8 +176,7 @@ button:active{
 }
 .project__describe{
   display: grid;
-  grid-template: 50% 50%/ 60% 40%;
-
+  grid-template: 100% 50%/ 60% 40%;
 }
 .projects__example{
   padding: 107px 0px 0 5em;
@@ -434,13 +440,13 @@ margin-right: 100;
         .agree__checkbox{
           position: relative;
           bottom: 40px;
-          .request__checkbox{
+          .checkbox{
             color: #FFFFFF;
             font-size: 14px;
             line-height: 22px;
             
           }
-          .request__checkbox[type='checkbox']:checked + label{
+          .checkbox[type='checkbox']:checked + label{
             background-color: #E3B87333; 
             opacity: 70%;
             transition: 0.3s ease;
@@ -590,4 +596,534 @@ margin-right: 100;
       }
     }
   }
+}
+.feedback__container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../img/png/image\ 7.2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #181818;
+  background-position-y: 12em;
+
+
+  .questions{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 445px;
+    width: 883px;
+    background-color: #181818;
+    color: #FFFFFF;
+    .questions__heading{
+      text-transform: uppercase;
+      padding-top: 1em;
+    }
+    .questions__wrap{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      max-width: 527px;
+      min-height: 138px;
+      .questions__label{
+        color: #FFFFFF;
+        font-size:14px;
+        font-weight: 400;
+        width: 100%;
+        position: relative;
+      }
+      hr{
+        border-bottom: 1px solid #FFFFFF;
+        width: 231px;
+        margin: 3px 0 0 0;
+        height: 0;
+      }
+      .questions__text{
+        width: 100%;
+        background-color:#181818;
+        color: #FFFFFF;
+        opacity: 50%;
+        border: none;
+        position: relative;
+      }
+      .input_number{
+        position: relative;
+        bottom: 2.25em;
+        left: 18.5em;
+      }
+      #hr1{width: 100%;}
+      .questions__text::placeholder{
+        color: #fff;
+        border: none;
+        outline: 0;
+      }
+    }
+    .agree__checkbox{
+      position: relative;
+      bottom: 40px;
+      padding-top: 46px;
+      .checkbox{
+        color: #FFFFFF;
+        font-size: 14px;
+        line-height: 22px;
+      }
+      .checkbox[type='checkbox']:checked + label{
+        background-color: #E3B87333; 
+        opacity: 70%;
+        transition: 0.3s ease;
+      }
+    }
+    .questions__btn{
+      font-size: 1.1em;
+      text-transform: uppercase; 
+      border: none;
+      color: white;
+      box-shadow: 0px 5px 15px 0px #E3B87333;
+      background: #E3B873;
+      border-radius: 2px;
+      padding: 20px 75px;
+      margin-bottom: 1em;
+      cursor: pointer;
+    }
+  }
+  .geo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    
+    .geo__heading{
+      width: 100%;
+      font-family: Yeseva One;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 27px;
+      text-transform: uppercase;
+      color: #E3B873;
+      text-align: center;
+      padding: 52px 0 57px 0;
+    }
+    .geo__img{
+      height: 465px;
+    }
+  }
+}
+.footer{
+  width: 100%;
+  height: 133px;
+  font-size: 0.75em;
+  background-color: #131313;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__container{
+  display: flex;
+  flex-flow: row nowrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__list{
+  display: flex;
+  gap: 2em;
+  list-style-type: none;
+  padding: 0 7em;
+}
+.footer__link{
+  font-size: 1em;
+  color: white;
+  gap: 0.25rem;
+  text-decoration: none;
+}
+.footer__link:hover{
+  background-color:#c7994e;
+  transition: 0.5s;
+}
+.footer__number{
+  color: #E3B873;
+  padding-right: 5em;
+  cursor: pointer;
+}
+.footer__btn{
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  border: none;
+  color: white;
+  box-shadow: 0px 5px 15px 0px #E3B87333;
+  background: #E3B873;
+  border-radius: 2px;
+  padding: 13px 33px;
+  cursor: pointer;
+}
+
+/*the ability to adapt to a narrow-format (phones) resolution of up to 375 pixels*/
+
+@media screen  and (max-width: 375px){
+
+*{
+  max-width: 375px;
+  margin: 0;
+  padding: 0;
+  font-size: 11px;
+}
+.CompletedProjects__img, .example__img, .footer{
+  display: none;
+}
+.heading{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.header__list{display: none;}
+.header__number{
+  padding: 0;
+  padding-left: 56px;
+}
+.header__btn{display: none;}
+
+.hero{
+  display: flex;
+  flex-direction: column;
+  max-height: 476px; 
+  width: 375px;
+  background-image: url(../img/png/image\ 4.3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+  gap: 1em;
+}
+.hero__container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-around;
+  max-width: calc(375px - 10%);
+  background: #000000B2;
+  opacity: 90%;
+  padding: 0;
+  padding: 30% 5%;
+}
+.hero__heading{
+  width: fit-content;
+  font-size: 23px;
+  line-height: 30px;
+  color: white;
+  text-transform: uppercase;
+  padding: 0;
+}
+.hero__heading_wrap{
+  color: #E3B873;
+  font-size: 23px;
+}
+.hero__text{
+  height: 94px; 
+  width: 330px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: left;
+  color: #fff;
+  padding: 16px 0 32px 0;
+}
+.hero button{
+  display: block;
+  text-align: center;
+}
+.hero__btn-orange{
+  width: 99%; 
+  height: 30%;
+  padding: 20px 120px 20px 90px;
+  margin-bottom: 32px;
+}
+.hero__btn-transparency{
+  padding: 20px 90px;
+}
+
+.projects__container{
+  max-width: 335px;
+  height: fit-content;
+  padding: 0 20px;
+}
+.projects__CompletedProjects{
+  max-width: 375px;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+.CompletedProjects__heading{
+  font-size: 22px;
+}
+.CompletedProjects__text{
+  width: 375px;
+  text-align: center;
+  font-size: 11px;
+  line-height: 17px;
+  padding: 32px 22px 36px;
+}
+.projects__img{width: 340px;text-align: center;}
+.projects__example{
+  display: none;
+}
+.project__describe{
+  display: grid;
+  grid-template: 100% 50%/ 100% 80%;
+  align-content: space-around;
+  justify-content: center;
+  align-items: start;
+  justify-items: start;
+  padding-top: 36px;
+}
+.project__describe h2{
+  color: #E3B873;
+  font-size: 14px;
+}
+.control__container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: px;
+}
+.control__video{
+  min-width: 340px;
+}
+hr{
+  border: 1px solid #E3B873;
+  margin: 28px 0 21px 0;
+}
+.control__text{
+  color: #FFFFFF;
+  max-width: 340px;
+  height: 106px;
+  text-align: center;
+  line-height: 18px;
+  font-size: 11px;
+}
+.control__text .screen{display: none;}
+.contacts{
+  padding-top: 70px;
+}
+.contacts__label{
+  color: #FFFFFF;
+  position: relative;
+  z-index: 10;
+  left: 21px;
+  top: 12px;
+}
+.contacts__text{
+  background-color: #131313;
+  width: 330px;
+  padding: 0 0 30px 0;
+  margin-left: 20px;
+}
+.contacts__btn{
+  width: 340px;
+  padding: 20px 75px;
+  margin: 0;
+  position: relative;
+  top: 85px;
+  left: 20px;
+}
+.contacts__agree{
+  color: #FFFFFF;
+  padding-top: 34px;
+  position: relative;
+  bottom: 85px;
+  right: 57px;
+}
+.TYPES-OF-REPAIR{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 80px;
+}
+.TYPES-OF-REPAIR__heading{
+  font-size: 22px;
+  font-weight: bold;
+}
+.TYPES-OF-REPAIR__img{
+  height: 38px;
+  padding: 17px 0 40px 0;
+}
+.TYPES-OF-REPAIR__wrap{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 15px;
+  max-width: 340px;
+}
+.Redecorating{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  height: 421px;
+  max-width: 340px;
+  margin-bottom: 177px;
+}
+.Overhaul{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  height: 421px;
+  min-width: 340px;
+  margin: 0;
+  margin-bottom: 177px;
+}
+.DesignerRepair{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  height: 365px;
+  min-width: 340px;
+}
+.TYPES-OF-REPAIR_container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #fff;
+  height: 241px;
+  min-width: 270px;
+  padding: 21px 0 0 31px;
+  position: relative;
+  top: 98px;
+}
+.Redecorating_heading{
+  font-size: 15px;
+  padding-right: 0px;
+}
+.Overhaul_heading{
+  font-size: 15px;
+  padding-right: 0px;
+}
+.DesignerRepair_heading{
+  font-size: 15px;
+  padding-right: 0px;
+}
+.TYPES-OF-REPAIR_list{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 13px;
+  padding: 10px 0;
+}
+.TYPES-OF-REPAIR_btn{
+  max-width: 190px;
+  font-size: 15px;
+  padding: 11px 19px;
+  margin: 10px 0;
+  position: relative;
+  right: 30px;
+}
+
+.information, .fantasies, .clients{
+  display: none;
+}
+.fantasiesPhone__container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 173px 20px 0;
+}
+.fantasiesPhone__heading{
+  font-size: 20px;
+  line-height: 30px;
+  color: #E3B873;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 25px;
+}
+.fantasiesPhone__img{
+  max-width: 340px;
+}
+
+.feedback__container{
+  background-image: none;
+  z-index: -1;
+  bottom: 100px;
+  position: relative;
+  padding-top: 173px;
+  .questions{
+    height: 100%;
+    max-width: 375px;
+    .questions__heading{
+      text-transform: uppercase;
+      padding: 0 0 52px 0;
+      font-size: 22px;
+    }
+    .questions__wrap{
+      max-width: 340px;
+      min-height: 138px;
+      .questions__label{
+        max-width: 340px;
+      }
+      hr{
+        width: 340px;
+        margin-bottom: 63px;
+      }
+      .input_number{
+        position: relative;
+        bottom: 0em;
+        left: 0em;
+      }
+    }
+    .agree__checkbox{
+      position: relative;
+      right: 31px;
+      bottom: 0px;
+      padding-top: 21px;
+      text-align: left;
+    }
+    #hr1{margin: 0;}
+    .questions__btn{
+      padding: 20px 150px;
+      margin: 86px 0 64px 0;
+    }
+  }
+  .geo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 80px;
+    .geo__heading{
+      font-size: 18px;
+      line-height: 25px;
+      padding: 0;
+      position: relative;
+      top: 270px;
+      background-image: url(../img/png/icon2.PNG);
+      background-size: 80px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-position-y: 95px;
+      padding-bottom: 60px;
+    }
+    .geo__img{
+      height: 255px;
+      position: relative;
+      bottom: 140px;
+    }
+  }
+}
+}
+/*adaptable to widescreen resolution from 2500 px*/
+
+@media screen  and (min-width: 2500px){
+  .control__video,hr,.control__text,.contacts,.contacts__agree{display: none;}
+  .TYPES-OF-REPAIR,.information,.fantasies,.fantasiesPhone,.clients,.feedback,.footer{display: none;}
 }
